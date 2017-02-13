@@ -1,0 +1,69 @@
+@charset "utf-8";
+*{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-decoration: none;
+}
+ 
+html,body{
+	width: 100%;
+	height: 100%;
+	overflow:hidden;	
+}
+html{
+	font-size: 100px;
+}
+body{
+	font-family: "Microsoft YaHei";
+}
+i,b{
+	font-style: normal;
+	font-weight: normal;
+}
+/* 定义字体图标 */
+@font-face{
+	font-family: "iconfont";
+	src:url("../../../images/iconfont/iconfont.ttf"),
+		url("../../../images/iconfont/iconfont.woff");
+}
+@font-face{
+	font-family: "iconmenu";
+	src:url("../../../images/iconfont/iconfont-menu.ttf"),
+		url("../../../images/iconfont/iconfont-menu.woff");
+}
+@font-face{
+	font-family: "iconback";
+	src:url("../../../images/iconfont/iconfont-back.ttf"),
+		url("../../../images/iconfont/iconfont-back.woff");
+}
+@font-face{
+	font-family: "iconclet";
+	src:url("../../../images/iconfont1/iconfont.ttf"),
+		url("../../../images/iconfont1/iconfont.woff");
+}
+
+
+/* 定义一个宏 */
+@mixin full(){
+	width:100%;
+	height:100%;
+	overflow:hidden;
+}
+@mixin box-flex(){
+	display:-webkit-flex;
+	display: -moz-flex;
+	display: -o-flex;
+	display: -ms-flex;
+	display: flex;
+}
+@mixin flex-direction($direction:row){
+	-webkit-flex-direction:$direction;
+}
+@mixin flex{
+	-webkit-flex:1;
+	flex:1;
+}
+@mixin float($l:left){
+	float: $l;
+}

@@ -1,0 +1,63 @@
+
+<div class="home">
+    <header class="header">
+        <ul>
+            <li class="icon-menu">&#xe745;</li>
+            <li>
+                <p id="title">
+                    <span class="active">热点</span>
+                    <span>关注</span>
+                </p>
+            </li>
+            <li class="icon-sm">&#xe684;</li>
+        </ul>
+    </header> 
+    <section class="section">
+
+        <div class="swiper-container home_firsts" id="main-container">
+            <div class="swiper-wrapper" style="width: 100%;height: 100%;">
+                <div class="swiper-slide" >
+                    <div class="home_z2">
+                        <ul class="nav" id="nav">
+                            <li class="active">足球生活</li>
+                            <li>足球现场</li>
+                            <li>足球美女</li>
+                        </ul>
+                        <div class="content" id="content">
+                            <div class="scroller">
+                                <div class="swiper-container nav-container" id="nav-container">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide list" >
+                                            <div class="scroller1">
+                                               <ul>
+                                                  <li ng-repeat="it in items">
+                                                     <a ui-sref="show({id:it.id})"><img src={{it.img}}><b>{{it.title}}</b></a>
+                                                  </li>
+                                               </ul>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide list">
+                                            足球现场
+                                            <div class="scroller1">
+                                                <div id="list1">足球现场</div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide list">
+                                            足球美女
+                                            <div class="scroller1">
+                                                <div id="list3">足球美女</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="swiper-slide">关注页...</div>
+            </div>
+        </div>
+    </section>
+</div>

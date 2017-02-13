@@ -1,0 +1,56 @@
+@charset "utf-8";
+@import "./common.scss";
+@import "../lib/swiper.min.css";
+.container{
+  @include full;
+  @include box-flex();
+  @include flex-direction(column);
+  .main{
+    @include flex();
+    overflow: hidden;
+    .main_z{
+      @include full;
+    }
+  } 
+  footer{
+    position: relative;
+    height: 0.44rem;
+    font-size: .14rem;
+    border-top: 1px solid #ccc;
+    padding-top: 0.06rem;
+    background: #fff;
+    box-sizing:border-box;
+    ol{
+      @include box-flex();
+      li{
+        @include box-flex();
+        @include flex();
+        @include flex-direction(column);
+        i{
+          font-family: "iconfont";
+          text-align: center;
+        }
+        &:nth-child(3){
+          position: relative;
+          i{
+            position: absolute;
+            left: 50%;
+            top: -0.14rem;
+            background: #fff;
+            width: 0.5rem;
+            height: 0.5rem;
+            border: 1px solid #666;
+            border-radius: 50%;
+            -webkit-transform:translate(-50%,0);
+            font-size: 0.4rem;
+            line-height: 0.5rem;
+          }
+        }
+        b{
+          text-align: center;
+        }
+      }
+    }
+  }
+
+}
